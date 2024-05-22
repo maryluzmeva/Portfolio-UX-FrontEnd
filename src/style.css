@@ -1,0 +1,49 @@
+.hero p {
+    font-size: 30px;
+    font-family: 'Merriweather';
+    margin: 0;
+    color:#fff;
+  }
+
+  .hero h1{
+    font-family: 'Lora';
+    color: #fff;
+  }
+  
+  .hero h2 {
+    font-family: 'Lora';
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 1.5;
+    color:#f8f8f8;
+  }
+  
+  .hero{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.6)), url("/images/hero-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 20% ;
+    text-align: center;
+    padding: 160px 10px;
+  }
+
+  .btn btn-lg {
+    display: block;
+  color:#f8f8f8;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: 'Merriweather';
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background: black;
+  text-decoration: none;
+  }
+
+.fa-brands {
+    font-size: 42px;
+    color:#f8f8f8;
+    margin-top: 10px;
+}
