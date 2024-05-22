@@ -2,12 +2,12 @@
     font-size: 30px;
     font-family: 'Merriweather';
     margin: 0;
-    color:#fff;
+    color:#ae603a;
   }
 
   .hero h1{
     font-family: 'Lora';
-    color: #fff;
+    color: #ae603a;
   }
   
   .hero h2 {
@@ -15,20 +15,20 @@
     font-weight: normal;
     font-size: 24px;
     line-height: 1.5;
-    color:#f8f8f8;
+    color: #ae603a;
   }
   
   .hero{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.6)), url("/images/hero-image.jpg");
+    background-image:linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.6));
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 20% ;
     text-align: center;
-    padding: 160px 10px;
+    padding: 200px 0px;
   }
 
   .btn btn-lg {
-    display: block;
+  display: block;
   color:#f8f8f8;
   font-weight: 700;
   font-size: 14px;
@@ -45,5 +45,18 @@
 .fa-brands {
     font-size: 42px;
     color:#f8f8f8;
-    margin-top: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
+
+.img-responsive {
+  max-width: 100%;
+  display: block;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
 }
