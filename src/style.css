@@ -1,33 +1,26 @@
-.hero p {
-    font-size: 30px;
-    font-family: 'Merriweather';
-    margin: 0;
-    color:#ae603a;
-  }
+.bgimage {
+  height:100vh;
+  background: url("/images/hero-image.jpg");
+  background-size:cover;
+  position:relative;
+}
 
-  .hero h1{
-    font-family: 'Lora';
-    color: #ae603a;
-  }
-  
-  .hero h2 {
-    font-family: 'Lora';
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 1.5;
-    color: #ae603a;
-  }
-  
-  .hero{
-    background-image:linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.6));
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: 20% ;
-    text-align: center;
-    padding: 200px 0px;
-  }
+.hero_title {
+  font-size: 4.5rem;
+}
+.hero_desc {
+  font-size: 2rem;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
 
-  .btn btn-lg {
+.btn btn-lg {
   display: block;
   color:#f8f8f8;
   font-weight: 700;
@@ -43,7 +36,7 @@
   }
 
 .fa-brands {
-    font-size: 42px;
+    font-size: 20px;
     color:#f8f8f8;
 }
 
@@ -59,4 +52,15 @@
 
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
+}
+
+.header-works {
+  background-image: url("/images/workheader.png");
+  background-size: cover;
+  position: relative;
+  height: 300px;
+}
+
+.header-works h2 {
+  text-align: right;
 }
