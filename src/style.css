@@ -1,50 +1,73 @@
-.bgimage {
-  height:100vh;
-  background: url("/images/hero-image.jpg");
-  background-size:cover;
-  position:relative;
+:root {
+  --branding-color: #AE603A;
+  --secondary-color: #FFD4BB;
+  --background-color: #F3F1Ed;
+  --heading-font-family: "Lora", serif;
+  --default-font-family: "Merriweather, serif";
 }
 
-.hero_title {
-  font-size: 4.5rem;
+body {
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
-.hero_desc {
-  font-size: 2rem;
-}
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #AE603A;
+header {
+  background-size: cover;
+  background-position-y: 20%;
+  color: var(--branding-color);
+  padding: 200px 0;
 }
 
-.btn btn-lg {
-  display: block;
-  color:#f8f8f8;
-  font-weight: 700;
-  font-size: 14px;
-  font-family: 'Merriweather';
-  line-height: 21px;
+header h1 {
+  font-family:var(--heading-font-family);
+  font-size: 30px;
+  font-weight:700px;
+  line-height: 1;
+  margin: 30px 0;
+}
+
+header h2 {
+  font-family: var(--default-font-family);
+  font-size: 50px;
+  font-weight:400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header h3 {
+  font-family:"Merriweather";
+  font-size: 24px;
+  font-weight:900px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+header a {
+  font-family:var(--default-font-family);
+  font-size: 16px;
+  font-weight:700px;
+  line-height: 1.5;
   text-align: center;
-  letter-spacing: 3px;
+  color:var(--background-color);
   text-transform: uppercase;
-  padding: 16px;
-  background: black;
   text-decoration: none;
-  }
+  background-color: var(--branding-color);
+  display:inline-block;
+  padding:16px 32px;
+  margin-top: 32px;
+  border-radius: 8px;
+}
 
-.fa-brands {
-    font-size: 20px;
-    color:#f8f8f8;
+
+.social-contact {
+  font-size: 18px;
+  padding: 12px;
+  color: var(--background-color);
 }
 
 .grid {
   display: grid;
   grid-gap: 64px;
 }
-
 .img-responsive {
   max-width: 100%;
   display: block;
@@ -54,13 +77,57 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.header-works {
-  background-image: url("/images/workheader.png");
-  background-size: cover;
-  position: relative;
-  height: 300px;
+.grid-2-columns p {
+  font-size: 18px;
 }
 
-.header-works h2 {
-  text-align: right;
+.grid-2-columns a {
+  font-size: 16px;
+  font-family:var(--default-font-family);
+  font-weight:700px;
+  line-height: 1.5;
+  text-align: center;
+  color:var(--background-color);
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: var(--branding-color);
+  display:inline-block;
+  padding:16px 32px;
+  margin-top: 32px;
+  border-radius: 8px;
+}
+
+ul {
+  list-style: none;
+}
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+footer {
+  background-color: var(--branding-color);
+  
+}
+
+footer a {
+  color: var(--background-color);
+}
+
+
+
+@media (max-width: 960px) {
+  header {
+    padding:60px 0;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+  header h3 {
+    font-size: 12px;
+  }
 }
