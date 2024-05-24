@@ -57,6 +57,14 @@ header a {
   border-radius: 8px;
 }
 
+.header {
+  padding: 40px;
+  text-align: center;
+  background: var(--branding-color);
+  color: var(--background-color);
+  font-size: 30px;
+  font-family: var(--default-font-family);
+}
 
 .social-contact {
   font-size: 18px;
