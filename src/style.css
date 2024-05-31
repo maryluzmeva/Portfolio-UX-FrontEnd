@@ -149,8 +149,10 @@ header h3 {
   
 }
 
+
 ul {
   list-style: none;
+  line-height: 2;
 }
 section {
   max-width: 100%;
