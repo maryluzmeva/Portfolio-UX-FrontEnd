@@ -8,7 +8,9 @@
 
 body {
   background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  font-family: var(--heading-font-family);
 }
+
 header {
   background-size: cover;
   background-position-y: 20%;
@@ -104,6 +106,10 @@ header h3 {
   font-size: 24px;
   padding: 12px;
   color: var(--branding-color);
+  text-align: center;
+}
+
+.social-buttons {
   text-align: center;
 }
 
