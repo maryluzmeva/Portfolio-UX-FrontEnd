@@ -6,12 +6,14 @@
   --default-font-family: "Merriweather, serif";
 }
 
+
 body {
   background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   font-family: var(--heading-font-family);
 }
 
 header {
+  height: 100dvh;
   background-size: cover;
   background-position-y: 20%;
   color: var(--secondary-color);
@@ -46,32 +48,15 @@ header h3 {
 }
 
 .hero {
-  height: 50vh;
-  background: url('/images/hero-image.jpg') no-repeat center center/cover;
-  display: flex;
+  height: 160px;
+  display: inline-block;
+  padding: auto;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: var(--background-color);
   position: relative;
   z-index: 1;
   font-family: var(--heading-font-family);
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: -1;
-}
-
-.hero-content {
-  max-width: 800px;
-  padding: 20px;
 }
 
 .hero h1 {
@@ -80,9 +65,15 @@ header h3 {
 }
 
 .hero p {
-  font-size:35px;
+  font-size:25px;
   margin-bottom: 30px;
 }
+
+.btn-social{
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.35em;
+  border-radius: 50%;}
 
 .btn-branding {
   display:block;
@@ -91,16 +82,13 @@ header h3 {
   font-weight:700px;
   line-height: 1.5;
   text-align: center;
-  color:var(--background-color);
   text-transform: uppercase;
   text-decoration: none;
-  text-align: center;
-  background-color: var(--branding-color);
-  display:inline-block;
   padding:16px 32px;
   margin:auto;
   border-radius: 8px;
 }
+
 
 .social-contact {
   font-size: 24px;
@@ -117,6 +105,8 @@ header h3 {
 .grid {
   display: grid;
   grid-gap: 64px;
+  place-items: center;
+  
 }
 .img-responsive {
   max-width: 100%;
@@ -127,10 +117,12 @@ header h3 {
 
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10;
 }
 
 .grid-2-columns p {
   font-size: 18px;
+  
 }
 
 .grid-2-columns a {
@@ -153,6 +145,17 @@ header h3 {
   font-size: 20px;
   font-family: var(--default-font-family);
   
+}
+
+.content-container {
+  padding: 120px 20px;
+}
+
+.experiences {
+  border-radius: 15px;
+  background: #f9f8f8;
+  box-shadow:  15px 15px 32px #d4d3d3,
+             -15px -15px 32px #ffffff;
 }
 
 
