@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  height: 100dvh;
+  height: 70dvh;
   background-size: cover;
   background-position-y: 20%;
   color: var(--secondary-color);
@@ -59,6 +59,7 @@ header h3 {
   font-family: var(--heading-font-family);
 }
 
+
 .hero h1 {
   font-size: 65px;
   margin-bottom: 20px;
@@ -68,6 +69,7 @@ header h3 {
   font-size:25px;
   margin-bottom: 30px;
 }
+
 
 .btn-social{
   width: 2.5rem;
@@ -100,7 +102,6 @@ header h3 {
 .social-buttons {
   text-align: center;
 }
-
 
 .grid {
   display: grid;
@@ -156,6 +157,10 @@ header h3 {
   background: #f9f8f8;
   box-shadow:  15px 15px 32px #d4d3d3,
              -15px -15px 32px #ffffff;
+}
+
+.project-description {
+  padding: 120px 60px;
 }
 
 
