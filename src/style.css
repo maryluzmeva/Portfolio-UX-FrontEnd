@@ -6,12 +6,6 @@
   --default-font-family: "Merriweather, serif";
 }
 
-
-body {
-  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-  font-family: var(--heading-font-family);
-}
-
 header {
   height: 70dvh;
   background-size: cover;
@@ -91,7 +85,6 @@ header h3 {
   border-radius: 8px;
 }
 
-
 .social-contact {
   font-size: 24px;
   padding: 12px;
@@ -99,9 +92,6 @@ header h3 {
   text-align: center;
 }
 
-.social-buttons {
-  text-align: center;
-}
 
 .grid {
   display: grid;
@@ -163,10 +153,29 @@ header h3 {
   padding: 120px 60px;
 }
 
+.works h2{ 
+  font-size: 45px;
+  line-height: 2;
+  
+  
+}
+
+
+.card {
+  width: 190px;
+  height: 254px;
+  background: rgb(236, 236, 236);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  margin-right: 15px;
+}
+
 
 ul {
   list-style: none;
   line-height: 2;
+}
+li {
+  font-size: 20px;
 }
 section {
   max-width: 100%;
