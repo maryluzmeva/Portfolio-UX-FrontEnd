@@ -41,6 +41,10 @@ header h3 {
   margin: 0;
 }
 
+header .about-me {
+  text-align: center;
+}
+
 .hero {
   height: 160px;
   display: inline-block;
@@ -100,9 +104,9 @@ header h3 {
   
 }
 .img-responsive {
-  max-width: 100%;
-  display: block;
-  border-radius: 120px;
+  max-width: 85%;
+  display: inline-flex;
+  border-radius: 100px;
   padding:30px;
 }
 
@@ -142,6 +146,34 @@ header h3 {
   padding: 120px 20px;
 }
 
+.contact {
+  text-align: center;
+  line-height: 2;
+  
+}
+
+.contact-button {
+  text-align: center;
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: var(--default-font-family);
+  text-transform: uppercase;
+  border-radius: 0.5em;
+  background: var(--background-color);
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.contact-button:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+
 .experiences {
   border-radius: 15px;
   background: #f9f8f8;
@@ -157,9 +189,7 @@ header h3 {
   font-size: 45px;
   line-height: 2;
   
-  
 }
-
 
 .card {
   width: 190px;
@@ -167,6 +197,7 @@ header h3 {
   background: rgb(236, 236, 236);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   margin-right: 15px;
+  text-align: center;
 }
 
 
@@ -176,6 +207,7 @@ ul {
 }
 li {
   font-size: 20px;
+  
 }
 section {
   max-width: 100%;
@@ -183,14 +215,6 @@ section {
   padding: 100px;
 }
 
-footer {
-  background-color: var(--branding-color);
-  
-}
-
-footer a {
-  color: var(--background-color);
-}
 
 
 
