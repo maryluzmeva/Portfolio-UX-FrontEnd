@@ -41,9 +41,22 @@ header h3 {
   margin: 0;
 }
 
-header .about-me {
-  text-align: center;
+ul {
+  list-style: none;
+  line-height: 2;
 }
+
+li {
+  line-height: 2;
+  font-weight: 500;
+  font-size: 20px;
+}
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px;
+}
+
 
 .hero {
   height: 160px;
@@ -73,7 +86,9 @@ header .about-me {
   width: 2.5rem;
   height: 2.5rem;
   padding: 0.35em;
-  border-radius: 50%;}
+  border-radius: 50%;
+  background-color: #ffffff;
+}
 
 .btn-branding {
   display:block;
@@ -200,23 +215,14 @@ header .about-me {
   text-align: center;
 }
 
+.about-me {
+  text-align: center;
+}
 
-ul {
-  list-style: none;
-  line-height: 2;
-}
-li {
-  font-size: 20px;
-  
-}
-section {
+.contact-me {
   max-width: 100%;
-  margin: 0 auto;
-  padding: 100px;
+  height: auto;
 }
-
-
-
 
 @media (max-width: 960px) {
   header {
@@ -230,5 +236,9 @@ section {
   }
   header h3 {
     font-size: 12px;
+  }
+
+  contact-me {
+    width: calc(50%-30px);
   }
 }
