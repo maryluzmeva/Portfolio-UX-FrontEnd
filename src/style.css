@@ -22,7 +22,7 @@ header {
   margin: auto;
   position: relative;
   height: auto;
-  z-index: 1;
+  z-index: 10;
   text-align: center;
 }
 
@@ -77,8 +77,9 @@ section {
 /*hero section*/
 
 .hero {
-  height: 160px;
-  display: inline-block;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
   padding: auto;
   align-items: center;
   justify-content: center;
@@ -90,12 +91,12 @@ section {
 
 
 .hero h1 {
-  font-size: 65px;
+  font-size: 4rem;
   margin-bottom: 20px;
 }
 
 .hero p {
-  font-size:25px;
+  font-size:1.25rem;
   margin-bottom: 30px;
 }
 
