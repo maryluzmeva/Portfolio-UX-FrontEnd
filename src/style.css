@@ -11,15 +11,18 @@ header {
   background-size: cover;
   background-position-y: 20%;
   color: var(--secondary-color);
-  padding: 200px 0;
+  padding: 60px 20px;
   font-family: var(--heading-font-family);
   margin: auto;
+  position: relative;
+  height: auto;
+  z-index: 1;
 }
 
 header h1 {
   font-family:var(--heading-font-family);
   font-size: 30px;
-  font-weight:700px;
+  font-weight:700;
   line-height: 1;
   margin: 30px 0;
 }
@@ -35,7 +38,7 @@ header h2 {
 header h3 {
   font-family:"Merriweather";
   font-size: 24px;
-  font-weight:900px;
+  font-weight:900;
   line-height: 1.5;
   letter-spacing: 5px;
   margin: 0;
@@ -53,7 +56,7 @@ li {
 }
 section {
   max-width: 100%;
-  margin: 0 auto;
+  margin: 40 auto;
   padding: 100px;
 }
 
@@ -81,6 +84,26 @@ section {
   margin-bottom: 30px;
 }
 
+.hero-text {
+  width: 100%; 
+  z-index: 1; 
+  display:block;
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero-text p {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  color:black;
+  z-index: 2;
+  position: relative;
+}
 
 .btn-social{
   width: 2.5rem;
@@ -94,7 +117,7 @@ section {
   display:block;
   font-family:var(--default-font-family);
   font-size: 16px;
-  font-weight:700px;
+  font-weight:700;
   line-height: 1.5;
   text-align: center;
   text-transform: uppercase;
@@ -128,7 +151,8 @@ section {
 
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 10;
+  grid-column-gap: 20px;
+  align-items: center;
 }
 
 .grid-2-columns p {
@@ -207,12 +231,9 @@ section {
 }
 
 .card {
-  width: 190px;
-  height: 254px;
-  background: rgb(236, 236, 236);
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  margin-right: 15px;
-  text-align: center;
+  width: 100%;
+  max-width: 300px; /* Give a reasonable maximum width */
+  margin: 15px auto;
 }
 
 .about-me {
@@ -226,7 +247,7 @@ section {
 
 @media (max-width: 960px) {
   header {
-    padding:60px 0;
+    padding:60px 20px;
   }
   header h1 {
     font-size: 48px;
@@ -238,7 +259,52 @@ section {
     font-size: 12px;
   }
 
-  contact-me {
+  .contact-me {
     width: calc(50%-30px);
   }
+  .card-group {
+    display: grid;
+    grid-template-columns: 1fr; /* Stack the cards vertically on small screens */
+    grid-gap: 20px;
+  }
+
+  .project-description {
+    padding: 60px 20px;
+  }
+
+  .hero-text {
+    font-size: 24px;
+    display: block;
+  }
+
+  .hero-text p{
+    font-size: 24px;
+    display: block;
+  }
 }
+
+
+@media (max-width: 768px) {
+  .grid-2-columns {
+    grid-template-columns: 1fr; /* Stack vertically */
+    text-align: center;
+  }
+
+  .img-responsive {
+    max-width: 60%;
+  } 
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  header h2 {
+    font-size: 16px;
+  }
+
+  .btn-branding {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
