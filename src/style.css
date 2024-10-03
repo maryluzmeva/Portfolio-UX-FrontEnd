@@ -6,8 +6,14 @@
   --default-font-family: "Merriweather, serif";
 }
 
+/*General styling*/
+body {
+  margin:0;
+  padding: 0;
+}
+
 header {
-  height: 70dvh;
+  height: auto;
   background-size: cover;
   background-position-y: 20%;
   color: var(--secondary-color);
@@ -17,6 +23,7 @@ header {
   position: relative;
   height: auto;
   z-index: 1;
+  text-align: center;
 }
 
 header h1 {
@@ -24,7 +31,8 @@ header h1 {
   font-size: 30px;
   font-weight:700;
   line-height: 1;
-  margin: 30px 0;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 header h2 {
@@ -44,6 +52,12 @@ header h3 {
   margin: 0;
 }
 
+header p {
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
 ul {
   list-style: none;
   line-height: 2;
@@ -60,6 +74,7 @@ section {
   padding: 100px;
 }
 
+/*hero section*/
 
 .hero {
   height: 160px;
@@ -105,6 +120,7 @@ section {
   position: relative;
 }
 
+/*buttons*/
 .btn-social{
   width: 2.5rem;
   height: 2.5rem;
@@ -127,7 +143,6 @@ section {
   border-radius: 8px;
 }
 
-
 .social-contact {
   font-size: 24px;
   padding: 12px;
@@ -135,18 +150,21 @@ section {
   text-align: center;
 }
 
+/*image*/
+.img-responsive {
+  max-width: 85%;
+  display: inline-flex;
+  border-radius: 100px;
+  padding:30px;
+}
+
+/*grid layout*/
 
 .grid {
   display: grid;
   grid-gap: 64px;
   place-items: center;
   
-}
-.img-responsive {
-  max-width: 85%;
-  display: inline-flex;
-  border-radius: 100px;
-  padding:30px;
 }
 
 .grid-2-columns {
@@ -176,6 +194,7 @@ section {
   border-radius: 8px;
 }
 
+/*Content*/
 .content {
   font-size: 20px;
   font-family: var(--default-font-family);
@@ -220,21 +239,29 @@ section {
              -15px -15px 32px #ffffff;
 }
 
-.project-description {
-  padding: 120px 60px;
+.projects {
+  padding: 40px 0;
 }
 
-.works h2{ 
-  font-size: 45px;
-  line-height: 2;
-  
-}
+/*all the cards HOME and WORK html*/
 
 .card {
   width: 100%;
   max-width: 300px; /* Give a reasonable maximum width */
   margin: 15px auto;
 }
+
+/*Only the cards from WORK page*/
+.card-project {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border: none;
+}
+
+.card-body-project {
+  padding: 20px;
+}
+
 
 .about-me {
   text-align: center;
@@ -245,6 +272,8 @@ section {
   height: auto;
 }
 
+
+/*Media Queries for Medium-Large Screens*/
 @media (max-width: 960px) {
   header {
     padding:60px 20px;
@@ -283,6 +312,7 @@ section {
   }
 }
 
+/*Media Queries for mobile devices*/
 
 @media (max-width: 768px) {
   .grid-2-columns {
@@ -305,6 +335,10 @@ section {
   .btn-branding {
     padding: 8px 16px;
     font-size: 14px;
+  }
+  
+  .card {
+    margin-bottom: 20px;
   }
 }
 
