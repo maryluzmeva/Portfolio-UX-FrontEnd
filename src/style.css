@@ -12,6 +12,7 @@ body {
   padding-top:  70px;
 }
 
+
 header {
   height: auto;
   background-size: cover;
@@ -22,7 +23,7 @@ header {
   margin: auto;
   position: relative;
   height: auto;
-  z-index: 10;
+  z-index: 100;
   text-align: center;
 }
 
@@ -75,9 +76,7 @@ section {
 }
 
 /*hero section*/
-
 .hero {
-  height: 100px;
   display: flex;
   flex-direction: column;
   padding: auto;
@@ -85,7 +84,7 @@ section {
   justify-content: center;
   text-align: center;
   position: relative;
-  z-index: 1;
+  z-index: 101;
   font-family: var(--heading-font-family);
 }
 
@@ -120,6 +119,7 @@ section {
   z-index: 2;
   position: relative;
 }
+
 
 /*buttons*/
 .btn-social{
