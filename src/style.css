@@ -273,7 +273,6 @@ section {
   height: auto;
 }
 
-
 /*Media Queries for Medium-Large Screens*/
 @media (max-width: 960px) {
   header {
